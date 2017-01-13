@@ -2,6 +2,12 @@
 
 A blog theme for [Ghost](http://github.com/tryghost/ghost/).
 
+
+## Installation
+
+You can download the theme `.zip` from github releases. Then add it as a theme on `[your-website]/ghost/settings/general/`.
+
+
 ## Copyright & License
 
 Copyright (c) 2016 CTcue - Released under the MIT License.
