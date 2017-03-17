@@ -22,16 +22,12 @@
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
 </head>
-<body class="{{body_class}} nav-closed">
+<body class="{{body_class}} nav-closed content-page">
 
     {{!-- The blog navigation links --}}
     {{navigation}}
 
-    <div id="blog-banner">
-        <div class="overlay"></div>
-    </div>
-
-    <div id="blog">
+    <div class="content">
         <div class="container">
             {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
             {{{body}}}
@@ -39,17 +35,51 @@
     </div>
     
     {{!-- The tiny footer at the very bottom --}}
-    <!-- <div id="contact">
-        <div class="full">
-          <div class="address">
-            <p>CTcue B.V.</p>
-            <p>Science Park 402 1098 XH</p>
-            <p>Amsterdam</p>
-            <p>info@ctcue.com</p>
-            <p>+31 (0) 85 600 1037</p>
-          </div>
+    <footer>
+        <div class="container">
+            <div class="newsletter-signup pull-right">
+                <h1>JOIN OUR NEWSLETTER</h1>
+                
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form action="//ctcue.us3.list-manage.com/subscribe/post?u=76889a3c77f2628ff852d1884&amp;id=7004cd5625" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <input type="email" value="" name="EMAIL" placeholder="Email address" class="required email pull-left" id="mce-EMAIL">
+                        <!-- <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    -->
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_76889a3c77f2628ff852d1884_7004cd5625" tabindex="-1" value=""></div>
+                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="ctcue-btn">Sign up</button>
+                    </form>
+                </div>
+
+                <div id="newsletter-signup-success">
+                    <p>Thanks for joining our mailing list!</p>
+                </div>
+
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
+                
+                <p>Don’t worry, we hate spam as much as you do!</p>
+            </div>
+
+            <div class="footer-links pull-left">
+                <div class="logo">
+                    <img src="{{asset "/img/ctcue-logo.png"}}" alt="CTcue">
+                    <p>CTcue</p>
+                </div>
+
+                <a href="https://twitter.com/ctcue" target="_blank">
+                    <i class="icon-twitter-box"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/company/ctcue" target="_blank">
+                    <i class="icon-linkedin-box"></i>
+                </a>
+            </div>
         </div>
-    </div> -->
+    </footer>
 
     
 

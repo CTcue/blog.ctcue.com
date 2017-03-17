@@ -105,11 +105,13 @@
         });
     };
 
-    $.fn.scrollView = function () {
-        return this.each(function () {
-            $('html, body').animate({
-                scrollTop: $(this).offset().top
-            }, 1000);
-        });
-    };
+    //Mailchimp form
+    $("#mc-embedded-subscribe-form").on("submit", function(){
+        // Check for error class
+        if(!$("#mc-embedded-subscribe-form input").hasClass("mce_inline_error")) {
+           // Hide form until refresh and show success message
+           $("#mc_embed_signup").css("display", "none");
+           $("#newsletter-signup-success").css("display", "block");
+        } 
+    });
 })(jQuery);
